@@ -31,8 +31,14 @@ export class Game extends React.Component<Props, State> {
 
     texts[lastHistory.place] = lastHistory.text;
     return (
-      <div className="game">
-        <Boxes texts={texts}/>
+      <div>
+        <div className="game">
+          <Boxes texts={texts}/>
+        </div>
+        <div className="buttons">
+          <button>場所</button>
+          <button>文字</button>
+        </div>
       </div>
     )
   }

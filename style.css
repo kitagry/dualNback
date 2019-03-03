@@ -52,3 +52,15 @@ ol, ul {
   left: calc(50% - 120px);
   float: left;
 }
+
+/* 下のボタン */
+.buttons {
+  margin: 50px;
+  text-align: center;
+}
+
+.buttons button {
+  margin: 30px;
+  width: 80px;
+  height: 50px;
+}
