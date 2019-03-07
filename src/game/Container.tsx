@@ -1,7 +1,7 @@
 import {Game} from './Game'
 import {connect} from 'react-redux'
 import {Dispatch} from 'redux'
-import {syncDate} from './clock'
+import {syncDate, pushPlace, pushText} from './clock'
 import {ReduxAction, ReduxState} from '../store'
 
 export class ActionDispatcher {
@@ -9,6 +9,14 @@ export class ActionDispatcher {
 
   public date() {
     this.dispatch(syncDate())
+  }
+
+  public clickPlace() {
+    this.dispatch(pushPlace())
+  }
+
+  public clickText() {
+    this.dispatch(pushText())
   }
 }
 
